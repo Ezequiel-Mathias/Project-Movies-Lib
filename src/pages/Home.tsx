@@ -17,8 +17,7 @@ const HomePage: React.FC = () => {
         const data = await resposta.json()
 
         setTopMovies(data.results);
-
-        
+ 
     }
 
     
