@@ -16,7 +16,7 @@
 
 ### 2 - Running the project
 
-After following the steps above, at the root of the project run:
+#### After following the steps above, at the root of the project run:
 
 <code>  npm i</code> </br> </br>
 <code>  npm start</code>
