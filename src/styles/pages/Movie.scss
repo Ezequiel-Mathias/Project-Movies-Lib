@@ -1,0 +1,69 @@
+.movie-page {
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 104px;
+
+    p {
+        width: clamp(20rem, 32vw, 31.25rem);
+    }
+
+    .taglinedescription {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 32px;
+    }
+
+    svg {
+        font-size: 1.5rem;
+        color: $color-yellow;
+    }
+
+    .movie-card {
+        text-align: center;
+        width: clamp(20rem, 32vw, 31.25rem);
+        background-color: $color-black;
+        margin-bottom: 0px;
+
+        h2 {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+        }
+
+    }
+
+    .container-info {
+
+        .info {
+            margin-bottom: 1.5rem;
+
+            .tagline {
+                font-size: clamp(1rem, 2vw, 1.3rem);
+            }
+
+            h3 {
+                font-size: clamp(1rem, 2vw, 1.3rem);
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+        }
+
+        .description {
+            padding-bottom: 10rem;
+
+            p {
+                line-height: 1.4rem;
+            }
+
+        }
+        
+    }
+
+}
