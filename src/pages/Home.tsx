@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MovieCard from '../components/shared/MoviesCard';
+import Footer from '../components/shared/Footer';
 
 
 const moviesURL = process.env.REACT_APP_API || console.log('API environment variable error, fill in the .env file correctly and run the application again');
@@ -29,6 +30,8 @@ const HomePage: React.FC = () => {
 
     return (
 
+        <>
+        
         <div className= "container-movie">
            <h2 className="title"> Melhores filmes:</h2>
 
@@ -41,6 +44,11 @@ const HomePage: React.FC = () => {
            </div>
             
         </div>
+
+        <Footer/>
+
+        </>
+       
     );
 }
 
