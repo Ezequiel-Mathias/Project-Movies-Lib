@@ -11,6 +11,7 @@ const SearchPage: React.FC = () => {
     const [searchParams] = useSearchParams();
     const [movies, setMovies] = useState([]);
     const query = searchParams.get('q');
+    const [result, setResult] = useState<boolean>();
 
 
     const getSearchedMovies = async (url: any) => {
@@ -19,9 +20,9 @@ const SearchPage: React.FC = () => {
 
         const data = await resposta.json()
 
-        setMovies(data.results);
+        data.results.length >= 1 ? setResult(true) : setResult(false);
+        setMovies(data.results);   
     }
-
 
     useEffect(() => {
 
@@ -34,13 +35,15 @@ const SearchPage: React.FC = () => {
     return (
         <>
             <div className="container-movie">
-                <h2 className="title"> Resultados para:{query}</h2>
+                
+                <h2 className="title"> {result ? `Resultados para:${query}` : "Ops :( não encontramos nada em relação ao título pesquisado."}</h2>
 
                 <div className="movies-container">
                     {movies &&
                         movies.map((movie: any) => (
                             <MovieCard key={movie.id} movie={movie} />
                         ))
+                        
                     }
                 </div>
 
