@@ -14,14 +14,16 @@ const SearchPage: React.FC = () => {
     const [result, setResult] = useState<boolean>();
 
 
-    const getSearchedMovies = async (url: any) => {
+    const getSearchedMovies = async (url: string) => {
 
         const resposta = await fetch(url)
 
         const data = await resposta.json()
 
         data.results.length >= 1 ? setResult(true) : setResult(false);
-        setMovies(data.results);   
+        setMovies(data.results); 
+        
+        
     }
 
     useEffect(() => {
@@ -41,7 +43,7 @@ const SearchPage: React.FC = () => {
 
                 <div className="movies-container">
                     {movies &&
-                        movies.map((movie: any) => (
+                        movies.map((movie : any) => (
                             <MovieCard key={movie.id} movie={movie} />
                         ))
                         
@@ -51,6 +53,7 @@ const SearchPage: React.FC = () => {
             </div>
 
             <Footer/>
+            
         </div>
 
     )

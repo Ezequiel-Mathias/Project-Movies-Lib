@@ -10,6 +10,11 @@ footer {
         color: $color-white;
         font-size: clamp(1rem, 2vw, 1.25rem);
         font-weight: bolder;
+        transition: 0.4s;
+    }
+
+    span:hover{
+        scale: (1.05);
     }
 }
 

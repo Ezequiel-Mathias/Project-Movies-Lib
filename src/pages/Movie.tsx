@@ -18,6 +18,8 @@ const MoviePage: React.FC = () => {
         const resposta = await fetch(url)
         const data = await resposta.json()
         setMovie(data);
+
+        console.log(data)
     }
 
     const formatCurrency = (number: number) => {
