@@ -8,5 +8,5 @@
 - install node
 - install npm
 
-### 2 - Setup .env
+### 1 - Setup .env
 
