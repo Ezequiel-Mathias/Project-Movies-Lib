@@ -33,7 +33,8 @@ const SearchPage: React.FC = () => {
     }, [query])
 
     return (
-        <>
+        <div className="container-search">
+            
             <div className="container-movie">
                 
                 <h2 className="title"> {result ? `Resultados para:${query}` : "Ops :( não encontramos nada em relação ao título pesquisado."}</h2>
@@ -50,7 +51,7 @@ const SearchPage: React.FC = () => {
             </div>
 
             <Footer/>
-        </>
+        </div>
 
     )
 }

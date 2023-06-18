@@ -36,7 +36,8 @@ a{
 
 .container-movie{
     margin-top: 104px;
-
+    min-height: 100vh;
+    
     .title{
         color: $color-white;
         font-size: clamp( 1.7rem, 3vw ,2rem);
@@ -54,6 +55,7 @@ a{
         justify-content: space-around;
         padding: 2rem;
         margin: 0 auto;
+        
     }
 
 }
@@ -62,6 +64,7 @@ a{
 /****************** Pages ******************/
 
 @import "./pages/Movie.scss";
+
 
 /****************** Components ******************/
 

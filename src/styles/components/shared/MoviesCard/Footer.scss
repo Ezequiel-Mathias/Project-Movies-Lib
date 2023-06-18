@@ -4,10 +4,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    
+
     span {
         color: $color-white;
         font-size: clamp(1rem, 2vw, 1.25rem);
