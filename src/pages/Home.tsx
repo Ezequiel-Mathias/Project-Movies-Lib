@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
 
         setTopMovies(data.results);
 
-        console.log(data)
+        
     }
 
     
